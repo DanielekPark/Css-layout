@@ -3,60 +3,60 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
 }
 
 p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
 }
 
 h2,
 h3,
 a {
-	color: #093a58;
+  color: #093a58;
 }
 
 h2,
 h3,
 h4 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 h4 {
-	margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 figure {
-	margin: 0;
-	line-height: 0;
-	position: relative; 
-} 
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
 
 figcaption {
-	font-size: .9em;
-	line-height: 1.5;
-	color: #fff;
-	padding: 1em;	
-	background: rgba(19,43,102, .85);
-    position: absolute;
-  	bottom: 0; 
-  	width: 100%;  
-}/*absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there*/
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1em;
+  background: rgba(19, 43, 102, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} /*absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there*/
 /*relative: an element’s original position remains in the flow of the document; To make the child element positioned absolutely from its parent element we need to set this on the parent element itself:*/
 /* ================================= 
   Base Layout Styles
@@ -64,148 +64,169 @@ figcaption {
 
 /* ---- Navigation ---- */
 .name {
-	font-size: 1.25em;
-	margin: 0;
+  font-size: 1.25em;
+  margin: 0;
 }
 
 .main-nav {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 .name a,
 .main-nav a {
-	display: block;
-	text-align: center;
-	padding: 10px 15px;
-}/*inline elements only take on right and left padding values NOT TOP AND BOTTOM VALUES*/
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+} /*inline elements only take on right and left padding values NOT TOP AND BOTTOM VALUES*/
 
 .main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
+  font-size: 0.95em;
+  color: #3acec2;
+  text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: #093a58;
+  color: #093a58;
 }
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .banner,
 .main-footer {
-	text-align: center;
+  text-align: center;
 }
 
 .banner {
-	color: #fff;
-	background: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 60px;
+  color: #fff;
+  background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 60px;
 }
 
 .col {
-	padding-right: 1em;
-	padding-left: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .main-footer {
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
 }
 
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 190px;
+  width: 190px;
 }
 
 .headline {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.icon-location{
-  width: 35px; 
-  position: absolute; 
+.icon-location {
+  width: 35px;
+  position: absolute;
   top: -15px;
-  right: -15px
+  right: -15px;
 }
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 768px) {
-	body{
-		padding-top: 68px; 
-	}
-	.main-header{
-		position: fixed; 
-		background: white; 
-		box-shadow: 0 1px 4px regba(0, 0, 0, 0.4); 
-		width: 100%;
-		top: 0;
-		z-index: 1; 
-	}
+  body {
+    padding-top: 68px;
+  }
+  .main-header {
+    position: fixed;
+    background: white;
+    box-shadow: 0 1px 4px regba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
 
-	.container {
-		width: 90%;
-		margin: 0 auto;
-	}
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-	.name,
-	.col {
-		float: left;
-	}
+  .name,
+  .col {
+    float: left;
+  }
 
-	.primary,
-	.secondary {
-		width: 50%;
-	}
+  .primary,
+  .secondary {
+    width: 50%;
+  }
 
-	.main-nav {
-		float: right;
-	}
+  .main-nav {
+    float: right;
+  }
 
-	.main-nav li {
-		display: inline-block;
-		margin-left: 15px;
-	}/*Margins and and padding won't be applied by the browser for inline elements*/
-	/*The display value inline-block generates an element that's like a block element but it's also flowed with surroundings as if it were an inline element;
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  } /*Margins and and padding won't be applied by the browser for inline elements*/
+  /*The display value inline-block generates an element that's like a block element but it's also flowed with surroundings as if it were an inline element;
 		the advantage to using inline-block you can style an inline block element as you would a block level element.*/
 
-	.tagline {
-		font-size: 1.4em;
-	}
+  .tagline {
+    font-size: 1.4em;
+  }
 
-/* ---- Float clearfix ---- */
+  /* ---- Float clearfix ---- */
 
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
-}
-
+  .clearfix::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
 }
 
 @media (min-width: 1025px) {
-	
-	.container {
-		width: 80%;
-		max-width: 1150px;
-	}
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
 
-	.primary {
-		width: 40%;
-	}
+  .primary {
+    width: 40%;
+  }
 
-	.secondary,
-	.tertiary {
-		width: 30%;
-	}
-
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
 }
+
+/* CSS ATTRIBUTE/CLASS SELECTORS
+COMBINATIONS
+div > h1 	(selects all h1 elements that whose DIRECT PARENT is a div)
+p + p 		(selects all p elements that are the next after another p element)
+ATTRIBUTE SELECTORS
+input[type] 	 (selects all input elements that are using the type attribute)
+input[type=text] (selects all input elements of type text (textboxes))
+[class^=grid]    (selects all elements that start with the a class name of grid)
+[class$=primary] (selects all elements that end with the a class name of primary)
+PSEUDO CLASSES
+button:active   (selects the button that is currently being pressed/touched; it is active when clicked)
+input:focus     (selects the in focus/allowed on elements that accept keyboard events)
+a:hover         (selects a link that th mouse pointer is over)
+INDEX SELECTORS (SUBSET OF PSEUDO CLASSES)
+p:nth-child(3)           (selects every p element that is the 3rd CHILD of its parent)
+p:nth-child(odd)         (selects every p element that is the odd number of its parent)
+p:nth-child-last-child(3)(selects every p element that is the 3rd from last inside its parent)
+p:nth-of-type(3)         (selects every p element that is the 3rd of its parent)
+p:nth-last-of-type(3)    (selects every p element that is the 3rd from last p element inside its parent)
+PSEUDO ELEMENTS
+div::after          (used to insert content after an element)
+div::before         (used to insert content before an element)
+input::placeholder  (selects HTML5 placeholder attribute, provides a hint of the expected value) */
